@@ -4,28 +4,33 @@
   align-items:center;
   justify-content: center;
   height: 90vh;
-  width: 100vh;
+
 }
-
-
 .chat-interface {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.head{
+  font-family: sans-serif;
 }
 
 .chat-window {
-  flex: 1;
-  padding: 20px;
+  height: 500px;
+  padding: 10px;
+  background-color: #f2f1f1;
   overflow-y: scroll;
-  background-color: #f7f7f7;
 }
 
 .input-container {
   display: flex;
   align-items: center;
   padding: 10px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .input-container input {
@@ -34,16 +39,21 @@
   border: none;
   border-radius: 4px;
   outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) inset;
 }
 
 .input-container button {
   margin-left: 10px;
-  padding: 10px 20px;
+  padding: 10px;
   border: none;
-  border-radius: 4px;
+  border-radius: 50%;
   background-color: #007bff;
   color: #fff;
   cursor: pointer;
 }
 
-/* Additional styling as per your requirements */
+.input-container button svg {
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+}
